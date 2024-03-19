@@ -1,0 +1,34 @@
+{
+  "name": "@lumjs/html-xml",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "exports":
+  {
+    ".": "./lib/index.js",
+    "./declarations": "./lib/declarations.js",
+    "./documents": "./lib/documents/index.js",
+    "./documents/default": "./lib/documents/default.js",
+    "./documents/frameset": "./lib/documents/frameset.js",
+    "./documents/doctypes": "./lib/documents/doctypes.js",
+    "./documents/xml": "./lib/documents/xml.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/supernovus/lum.html-xml.js.git"
+  },
+  "dependencies": {
+    "@lumjs/core": "^1.20.0"
+  },
+  "devDependencies":
+  {
+    "@lumjs/tests": "^1.8.2"
+  },
+  "scripts":
+  {
+    "test": "lumtest.js",
+    "build-docs": "jsdoc -c ./jsdoc.json"
+  }
+}
